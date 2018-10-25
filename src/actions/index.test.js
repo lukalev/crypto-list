@@ -22,8 +22,6 @@ describe('Test thunk action creator', () => {
         const actualActions = store.getActions().map(action => action.type)
         expect(actualActions).toEqual(expectedActions)
      })
-
-    fetchMock.restore()
   })
   
 })
